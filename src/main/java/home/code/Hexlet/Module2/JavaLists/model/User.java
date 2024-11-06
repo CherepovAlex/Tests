@@ -1,4 +1,4 @@
-package Hexlet.Module2.JavaLists.model;
+package home.code.Hexlet.Module2.JavaLists.model;
 
 import java.util.List;
 import java.util.ArrayList;
