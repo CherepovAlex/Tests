@@ -1,4 +1,4 @@
-package Hexlet.Module1.OsnovyJava.Kurs;
+package home.code.Hexlet.Module1.OsnovyJava.Kurs;
 
 public class _29Counter {
     public static int bigLettersCount(String text) {

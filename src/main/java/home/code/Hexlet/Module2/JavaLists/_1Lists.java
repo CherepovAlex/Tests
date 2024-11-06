@@ -1,6 +1,5 @@
-package Hexlet.Module2.JavaLists;
+package home.code.Hexlet.Module2.JavaLists;
 
-import java.util.ArrayList;
 import java.util.List;
 
 class App {

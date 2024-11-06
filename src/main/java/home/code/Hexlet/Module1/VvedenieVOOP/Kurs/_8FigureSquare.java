@@ -1,4 +1,4 @@
-package Hexlet.Module1.VvedenieVOOP.Kurs;
+package home.code.Hexlet.Module1.VvedenieVOOP.Kurs;
 
 class Quadrate implements Geometric {
     int str;
@@ -12,8 +12,7 @@ class Quadrate implements Geometric {
     }
     @Override
     public double getSquare() {
-        double d = this.str * this.str;
-        return d;
+        return this.str * this.str;
     }
 }
 

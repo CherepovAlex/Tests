@@ -3,7 +3,7 @@ package home.code.Hexlet.Module1.OsnovyJava.Kurs;
 class App29 {
     // BEGIN (write your solution here)
     public static boolean greaterThan(String first, String second) {
-        if (Hexlet.Module1.OsnovyJava.Kurs._29Counter.bigLettersCount(first) > Hexlet.Module1.OsnovyJava.Kurs._29Counter.bigLettersCount(second))
+        if (home.code.Hexlet.Module1.OsnovyJava.Kurs._29Counter.bigLettersCount(first) > home.code.Hexlet.Module1.OsnovyJava.Kurs._29Counter.bigLettersCount(second))
             return true;
         else
             return false;
