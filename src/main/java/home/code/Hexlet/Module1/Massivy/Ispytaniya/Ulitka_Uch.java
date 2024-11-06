@@ -1,5 +1,4 @@
-package Hexlet.Module1.Massivy.Ispytaniya;
-import org.apache.commons.lang3.ArrayUtils;
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 
 import java.util.Arrays;
 import static Hexlet.Module1.Massivy.Ispytaniya.Utils.flatten;
@@ -45,12 +44,6 @@ class App10_1 {
 
 public class Ulitka_Uch {
     public static void main(String[] args) {
-//        int[][] nested = {
-//                {1, 2},
-//                {3, 4},
-//        };
-//        var flattened = flatten(nested);
-//        System.out.println(Arrays.toString(flattened)); // => [1, 2, 3, 4]
 
         int[][] matrix = {
                 {1, 2, 3, 4},

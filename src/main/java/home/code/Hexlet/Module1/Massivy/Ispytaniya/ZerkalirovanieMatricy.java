@@ -1,10 +1,4 @@
-// Реализуйте публичный статический метод getMirrorMatrix(), который принимает двумерный массив
-// (матрицу) целых чисел. Метод должен возвращать двумерный массив, изменённый таким образом,
-// что правая половина матрицы становится зеркальной копией левой половины, симметричной
-// относительно вертикальной оси матрицы. Для простоты условимся, что матрица всегда имеет
-// чётное количество столбцов и количество столбцов всегда равно количеству строк.
-
-package Hexlet.Module1.Massivy.Ispytaniya;
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 
 import java.util.Arrays;
 
@@ -49,11 +43,5 @@ public class ZerkalirovanieMatricy {
 
         var mirroredMatrix = App5.getMirrorMatrix(matrix);
         System.out.println(Arrays.deepToString(mirroredMatrix)); //=>
-// [
-//     [11, 12, 12, 11],
-//     [21, 22, 22, 21],
-//     [31, 32, 32, 31],
-//     [41, 42, 42, 41],
-//  ]
     }
 }

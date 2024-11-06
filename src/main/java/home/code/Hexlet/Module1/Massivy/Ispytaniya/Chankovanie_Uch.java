@@ -1,7 +1,4 @@
-//Реализуйте публичный статический метод chunk(), который принимает на вход массив строк и
-// число, задающее размер чанка (куска). Метод должен вернуть двумерный массив, состоящий из чанков
-// указанной размерности.
-package Hexlet.Module1.Massivy.Ispytaniya;
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 
 import java.util.Arrays;
 
@@ -14,7 +11,7 @@ class App9_1 {
         var index = 0;
 
         for (var i = 0; i < wordsCount; i += size) {
-            var to = i + size > wordsCount ? wordsCount : i + size;
+            var to = Math.min(i + size, wordsCount);
             chunks[index] = Arrays.copyOfRange(words, i, to);
             index++;
         }

@@ -1,20 +1,7 @@
-//Матрицу можно представить в виде двумерного массива. Например,
-// массив new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}} — это отображение матрицы:
-//1 2 3
-//4 5 6
-//7 8 9
-//Реализуйте публичный статический метод buildSnailPath(), который принимает на вход матрицу целых чисел и
-//возвращает массив элементов матрицы по порядку следования от левого верхнего элемента по часовой стрелке
-//к внутреннему. Движение по матрице напоминает улитку:
-//Подсказки
-//В процессе решения вам может понадобиться метод flatten(), который выпрямляет вложенный двумерный массив
-// целых чисел, делая из него одномерный. Этот метод уже импортирован в файле App.java.
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 
-package Hexlet.Module1.Massivy.Ispytaniya;
 import org.apache.commons.lang3.ArrayUtils;
-
 import java.util.Arrays;
-import static Hexlet.Module1.Massivy.Ispytaniya.Utils.flatten;
 
 class App10 {
 
@@ -62,13 +49,6 @@ class App10 {
 
 public class Ulitka {
     public static void main(String[] args) {
-//        int[][] nested = {
-//                {1, 2},
-//                {3, 4},
-//        };
-//        var flattened = flatten(nested);
-//        System.out.println(Arrays.toString(flattened)); // => [1, 2, 3, 4]
-
         int[][] matrix = {
                 {1, 2, 3, 4},
                 {5, 6, 7, 8},
@@ -76,14 +56,5 @@ public class Ulitka {
         };
         var result = App10.buildSnailPath(matrix);
         System.out.println(Arrays.toString(result));
-// => [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
-
-//        int[][] matrix1 = {
-//             {1, 2},
-//             {3, 4}
-//        };
-//        var result1 = App10.buildSnailPath(matrix1);
-//        System.out.println(Arrays.toString(result1));
-
     }
 }

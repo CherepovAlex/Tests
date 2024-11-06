@@ -1,9 +1,4 @@
-//Реализуйте публичные статические методы rotateLeft() и rotateRight(), которые поворачивают
-// матрицу влево (против часовой стрелки) и соответственно вправо (по часовой стрелке).
-// Матрица представляет собой двумерный массив целых чисел. Методы должны возвращать новую матрицу,
-// не изменяя исходную.
-
-package Hexlet.Module1.Massivy.Ispytaniya;
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 import java.util.Arrays;
 class App6 {
     // BEGIN
@@ -45,20 +40,7 @@ public class VraschenieMatricy {
 
         var rotatedLeft = App6.rotateLeft(matrix);
         System.out.println(Arrays.deepToString(rotatedLeft)); // =>
-// [
-//   [4, 8, 2],
-//   [3, 7, 1],
-//   [2, 6, 0],
-//   [1, 5, 9],
-// ]
-
         var rotatedRight = App6.rotateRight(matrix);
         System.out.println(Arrays.deepToString(rotatedRight)); // =>
-// [
-//   [9, 5, 1],
-//   [0, 6, 2],
-//   [1, 7, 3],
-//   [2, 8, 4],
-// ]
     }
 }

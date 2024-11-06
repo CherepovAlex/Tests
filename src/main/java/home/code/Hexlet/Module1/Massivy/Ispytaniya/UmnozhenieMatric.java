@@ -11,7 +11,7 @@
 //Подсказки
 //Описание алгоритма перемножения матриц
 //Демонстрация операций перемножения матриц
-package Hexlet.Module1.Massivy.Ispytaniya;
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 
 import java.util.Arrays;
 
@@ -47,10 +47,5 @@ public class UmnozhenieMatric {
         };
         var multipliedMatrix = App8.multiply(matrixA, matrixB);
         System.out.println(Arrays.deepToString(multipliedMatrix)); // =>
-        // [
-//            {15, 27},
-//            {6, 7},
-//            {26, 63},
-        // ]
     }
 }

@@ -1,4 +1,4 @@
-package Hexlet.Module1.Massivy.Ispytaniya;
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 
 class App {
     public static int calcShipsCount(int[][] matrix) {
@@ -18,10 +18,7 @@ class App {
     }
 
     public static boolean isNewShip(int[][] matrix, int i, int j) {
-        if ((j > 0 && matrix[i][j - 1] == 1 || i > 0 && matrix[i - 1][j] == 1)) {
-            return false;
-        }
-        return true;
+        return (j <= 0 || matrix[i][j - 1] != 1) && (i <= 0 || matrix[i - 1][j] != 1);
     }
 
     public static boolean isValidField(int[][] matrix) {
@@ -61,12 +58,12 @@ public class MorskoyBoy {
         };
         System.out.println(App.calcShipsCount(battleField1)); // 6
 
-        int[][] battleField2 = {
-                {0, 1, 0, 0},
-                {1, 0, 0, 1},
-                {0, 0, 0, 0},
-                {0, 1, 1, 1},
-        };
+//        int[][] battleField2 = {
+//                {0, 1, 0, 0},
+//                {1, 0, 0, 1},
+//                {0, 0, 0, 0},
+//                {0, 1, 1, 1},
+//        };
 
         System.out.println(App.isValidField(battleField1)); // false
     }

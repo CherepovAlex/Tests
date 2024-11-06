@@ -1,7 +1,4 @@
-//Реализуйте публичный статический метод chunk(), который принимает на вход массив строк и
-// число, задающее размер чанка (куска). Метод должен вернуть двумерный массив, состоящий из чанков
-// указанной размерности.
-package Hexlet.Module1.Massivy.Ispytaniya;
+package home.code.Hexlet.Module1.Massivy.Ispytaniya;
 
 import org.apache.commons.lang3.ArrayUtils;
 
