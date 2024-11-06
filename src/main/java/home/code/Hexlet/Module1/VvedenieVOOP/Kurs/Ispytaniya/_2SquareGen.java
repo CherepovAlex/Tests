@@ -1,8 +1,7 @@
-package Hexlet.Module1.VvedenieVOOP.Kurs.Ispytaniya;
+package home.code.Hexlet.Module1.VvedenieVOOP.Kurs.Ispytaniya;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 class Square {

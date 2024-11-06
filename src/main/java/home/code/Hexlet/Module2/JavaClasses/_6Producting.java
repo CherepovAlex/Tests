@@ -1,4 +1,4 @@
-package Hexlet.Module2.JavaClasses;
+package home.code.Hexlet.Module2.JavaClasses;
 
 class ProductsStorage {
     int goodsQuantity;
@@ -13,9 +13,6 @@ class ProductsStorage {
         return goodsQuantity;
     }
 
-    public int getMaxCapacity() {
-        return maxCapacity;
-    }
 
     public void placeProducts(int numberProd) {
         if (goodsQuantity + numberProd <= maxCapacity) {

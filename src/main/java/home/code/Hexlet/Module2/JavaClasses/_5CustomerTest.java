@@ -1,6 +1,6 @@
-package Hexlet.Module2.JavaClasses;
+package home.code.Hexlet.Module2.JavaClasses;
 
-class CustomerDTO{
+class CustomerDTO {
     final String firstName;
     final String lastName;
     final String email;
@@ -10,22 +10,10 @@ class CustomerDTO{
         this.lastName = lastName;
         this.email = email;
     }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
 }
 
 public class _5CustomerTest {
     public static void main(String[] args) {
-        var customerDTO = new CustomerDTO("Anna", "Smith", "anna@gmail.com");
+        new CustomerDTO("Anna", "Smith", "anna@gmail.com");
     }
 }
