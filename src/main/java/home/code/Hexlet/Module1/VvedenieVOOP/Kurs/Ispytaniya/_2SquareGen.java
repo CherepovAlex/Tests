@@ -1,7 +1,6 @@
 package home.code.Hexlet.Module1.VvedenieVOOP.Kurs.Ispytaniya;
 
 import org.apache.commons.lang3.ArrayUtils;
-
 import java.util.Arrays;
 
 class Square {
@@ -38,11 +37,7 @@ public class _2SquareGen {
     public static void main(String[] args) {
         var square = new Square(16);
         System.out.println(square.getSide()); // 16
-
-        // Создаем массив из трех квадратов со стороной 5
         Square[] squares = SquareGenerator.generate(5, 3);
-        // [new Square(5), new Square(5), new Square(5)]
         System.out.println(Arrays.toString(squares));
-
     }
 }

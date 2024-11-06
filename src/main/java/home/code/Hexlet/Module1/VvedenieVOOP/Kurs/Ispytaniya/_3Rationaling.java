@@ -1,4 +1,4 @@
-package Hexlet.Module1.VvedenieVOOP.Kurs.Ispytaniya;
+package home.code.Hexlet.Module1.VvedenieVOOP.Kurs.Ispytaniya;
 
 class Rational {
     int chislitel;
@@ -10,13 +10,11 @@ class Rational {
     }
 
     public int getNumer() { // нормализованный числитель
-        int normChisl = chislitel / gcd(chislitel, znamenatel);
-        return normChisl;
+        return chislitel / gcd(chislitel, znamenatel);
     }
 
     public int getDenom() { // нормализованный знаменатель
-        int normZnam = znamenatel / gcd(chislitel, znamenatel);
-        return normZnam;
+        return znamenatel / gcd(chislitel, znamenatel);
     }
 
     public Rational add(Rational rat2) { // сложение двух дробей
@@ -24,11 +22,11 @@ class Rational {
         int chisl = this.getNumer() * (znam / this.getDenom()) + rat2.getNumer() * (znam / rat2.getDenom());
         if (chisl % znam == 0) {
             chisl = chisl / znam;
-            znam = znam / znam;
+            znam = 1;
         }
         if (znam % chisl == 0) {
             znam = znam / chisl;
-            chisl = chisl / chisl;
+            chisl = 1;
         }
         return new Rational(chisl, znam);
     }
@@ -38,11 +36,11 @@ class Rational {
         int chisl = (this.getNumer() * (znam / this.getDenom()) - rat2.getNumer() * (znam / rat2.getDenom()));
         if (chisl % znam == 0) {
             chisl = chisl / znam;
-            znam = znam / znam;
+            znam = 1;
         }
         if (znam % chisl == 0) {
             znam = znam / chisl;
-            chisl = chisl / chisl;
+            chisl = 1;
         }
         return new Rational(chisl, znam);
     }
@@ -51,10 +49,7 @@ class Rational {
         chislitel = Math.abs(chislitel);
         znamenatel = Math.abs(znamenatel);
         int nod = 1;
-        int min = znamenatel;
-        if (chislitel < znamenatel) {
-            min = chislitel;
-        }
+        int min = Math.min(chislitel, znamenatel);
         for (int i = min; i >= 2; i--) {
             if (chislitel % i == 0 && znamenatel % i == 0) {
                 nod = i;
@@ -68,10 +63,7 @@ class Rational {
         int nok = 1;
         znam1 = Math.abs(znam1);
         znam2 = Math.abs(znam2);
-        int max = znam1;
-        if (znam2 > znam1) {
-            max = znam2;
-        }
+        int max = Math.max(znam2, znam1);
         if (znam2 == znam1) return znam2;
         for (int i = max + 1; i <= znam1 * znam2; i++) {
             if (i % znam1 == 0 && i % znam2 == 0) {
@@ -93,7 +85,7 @@ public class _3Rationaling {
         var rat1 = new Rational(3, 9);
         System.out.println(rat1.getNumer()); // 1
         System.out.println(rat1.getDenom()); // 3
-        System.out.println(rat1.toString()); // "1/3"
+//        System.out.println(rat1.toString()); // "1/3"
         System.out.println();
 
         var rat2 = new Rational(10, 3);
@@ -106,13 +98,13 @@ public class _3Rationaling {
         var sub1 = rat1.sub(rat2);
         System.out.println(sub1.getNumer());
         System.out.println(sub1.getDenom());
-        System.out.println(sub1.toString()); // "-3/1"
+//        System.out.println(sub1.toString()); // "-3/1"
         System.out.println();
 
         var rat3 = new Rational(-4, 16);
         System.out.println(rat3.getNumer()); // -1
         System.out.println(rat3.getDenom()); // 4
-        System.out.println(rat3.toString()); // "-1/4"
+//        System.out.println(rat3.toString()); // "-1/4"
         System.out.println();
 
         var rat4 = new Rational(12, 5);
