@@ -1,4 +1,4 @@
-package Hexlet.Module2.JavaClasses;
+package home.code.Hexlet.Module2.JavaClasses;
 
 class Book {
     String title;

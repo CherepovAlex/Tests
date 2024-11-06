@@ -1,4 +1,4 @@
-package Hexlet.Module1.VvedenieVOOP.Kurs;
+package home.code.Hexlet.Module1.VvedenieVOOP.Kurs;
 
 class User {
     int id;
@@ -10,10 +10,7 @@ class User {
     }
 
     public boolean isEqual(User user) {
-        if (this.id == user.id) {
-            return true;
-        } else
-        return false;
+        return (this.id == user.id) ? true : false;
     }
 }
 

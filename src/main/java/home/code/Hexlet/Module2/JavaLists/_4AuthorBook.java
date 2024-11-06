@@ -1,6 +1,5 @@
-package Hexlet.Module2.JavaLists;
+package home.code.Hexlet.Module2.JavaLists;
 
-import java.util.ArrayList;
 import java.util.List;
 
 class App4 {
@@ -16,18 +15,14 @@ class App4 {
 }
 
 class Book {
-    private String name;
-    private String authorBook;
-    private String genre;
+    private final String name;
+    private final String authorBook;
+    private final String genre;
 
     public Book(String name, String authorBook, String genre) {
         this.name = name;
         this.authorBook = authorBook;
         this.genre = genre;
-    }
-
-    public String getTitle() {
-        return name;
     }
 
     public String getAuthorName() {
