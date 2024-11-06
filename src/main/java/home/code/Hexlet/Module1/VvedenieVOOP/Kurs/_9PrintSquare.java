@@ -1,4 +1,4 @@
-package Hexlet.Module1.VvedenieVOOP.Kurs;
+package home.code.Hexlet.Module1.VvedenieVOOP.Kurs;
 class Rectangle extends Exception {
     private int dlina;
     private int shirina;

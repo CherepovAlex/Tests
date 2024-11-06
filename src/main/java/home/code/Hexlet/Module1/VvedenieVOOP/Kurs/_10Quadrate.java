@@ -1,12 +1,11 @@
-package Hexlet.Module1.VvedenieVOOP.Kurs;
+package home.code.Hexlet.Module1.VvedenieVOOP.Kurs;
 
 // BEGIN (write your solution here)
 import Hexlet.Module1.VvedenieVOOP.Kurs.geometry.Quadrate;
 
 class App10 {
     public static Quadrate enlargeQuadrate(Quadrate quadrate) {
-        var quadrateNew = new Quadrate(quadrate.getSide() * 2);
-        return quadrateNew;
+        return new Quadrate(quadrate.getSide() * 2);
     }
 }
 // END

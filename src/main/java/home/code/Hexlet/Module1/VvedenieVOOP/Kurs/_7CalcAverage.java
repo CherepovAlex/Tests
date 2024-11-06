@@ -1,4 +1,4 @@
-package Hexlet.Module1.VvedenieVOOP.Kurs;
+package home.code.Hexlet.Module1.VvedenieVOOP.Kurs;
 
 class App7 {
     public static Double calculateAverage(Integer[] intArray) {
