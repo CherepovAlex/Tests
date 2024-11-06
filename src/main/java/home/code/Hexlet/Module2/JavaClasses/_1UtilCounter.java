@@ -6,7 +6,6 @@ class TextUtils {
 
     public static int getWordsCount(String text) {
         int count = 0;
-        //TODO
         String[] str = StringUtils.split(text, " ");
         return str.length;
     }

@@ -36,7 +36,6 @@ class BankAccount {
     }
 
     public void withdraw(String currency, int amountMoney) {
-        //TODO
         if (accountCurrency == "eur" && !accountCurrency.equals(currency)) {
             if (balance < amountMoney / moneyCourse) {
                 throw new IllegalArgumentException("Insufficient funds");
