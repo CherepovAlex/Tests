@@ -1,7 +1,6 @@
 package home.code.Hexlet.Module2.JavaLists.Ispytaniya;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 class App2 {
