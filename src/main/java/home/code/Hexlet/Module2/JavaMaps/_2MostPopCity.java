@@ -8,11 +8,10 @@ class App2 {
         String city = null;
         var entries = map.entrySet();
         for(var entry: entries){
-            entry.getKey();
             if (entry.getValue() > max){
                 max = entry.getValue();
                 city = entry.getKey();
-            };
+            }
         }
         return city;
     }
