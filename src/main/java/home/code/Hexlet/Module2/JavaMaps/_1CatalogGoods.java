@@ -3,7 +3,6 @@ package home.code.Hexlet.Module2.JavaMaps;
 import java.util.Map;
 
 class App1 {
-//    private static Map<String, Double> products = Data.getProducts();
     private static final Map<String, Double> products = Map.of(
             "Coffee", 30.0,
             "Bread", 10.0,
