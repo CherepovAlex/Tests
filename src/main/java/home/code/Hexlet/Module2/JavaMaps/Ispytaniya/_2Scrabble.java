@@ -5,7 +5,7 @@ import java.util.Map;
 
 class App1 {
     public static boolean scrabble(String simbols, String word) {
-        if ((word.length() > simbols.length() || word.equals("") || simbols.equals(""))) return false;
+        if ((word.length() > simbols.length() || word.isEmpty() || simbols.isEmpty())) return false;
 
         char[] simbolsChar = simbols.toLowerCase().toCharArray();
         char[] wordChar = word.toLowerCase().toCharArray();

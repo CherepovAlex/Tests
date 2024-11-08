@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 
 class App {
     public static String bqs(LinkedHashMap<String, String> linkedHashMap) {
-        if (linkedHashMap.size() == 0){
+        if (linkedHashMap.isEmpty()){
             return "";
         }
         var entries = linkedHashMap.entrySet();
