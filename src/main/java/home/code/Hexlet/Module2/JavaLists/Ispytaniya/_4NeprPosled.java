@@ -40,7 +40,7 @@ class App4 {
 
 public class _4NeprPosled {
     public static void main(String[] args) {
-        var ranges1 = App4.summaryRanges(new ArrayList<Integer>());
+        var ranges1 = App4.summaryRanges(new ArrayList<>());
         System.out.println(ranges1); // => []
 
         var ranges2 = App4.summaryRanges(List.of(1));
