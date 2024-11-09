@@ -4,16 +4,17 @@ import home.code.Hexlet.Module2.JavaFunctions.model.User;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 class App2 {
     public static List<User> getOldest(List<User> list, int number) {
         ArrayList<User> newList = new ArrayList<>();
         ArrayList<User> newList1 = new ArrayList<>(list);
-        if (list.size() == 0) {
+        if (list.isEmpty()) {
             return newList;
         }
-        newList1.sort((v1, v2) -> Integer.compare(v1.getBirthday().getYear(), v2.getBirthday().getYear()));
+        newList1.sort(Comparator.comparingInt(v -> v.getBirthday().getYear()));
         for (int i = 0; i < number; i++) {
             newList.add(newList1.get(i));
         }
@@ -23,8 +24,8 @@ class App2 {
     public static List<User> getOldest(List<User> list) {
         ArrayList<User> newList = new ArrayList<>();
         ArrayList<User> newList1 = new ArrayList<>(list);
-        newList1.sort((v1, v2) -> Integer.compare(v1.getBirthday().getYear(), v2.getBirthday().getYear()));
-        newList.add(newList1.get(0));
+        newList1.sort(Comparator.comparingInt(v -> v.getBirthday().getYear()));
+        newList.add(newList1.getFirst());
         return newList;
     }
 }
