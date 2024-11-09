@@ -3,8 +3,8 @@ package home.code.Hexlet.Module2.JavaMaps.Ispytaniya;
 import java.util.LinkedHashMap;
 
 class Cache {
-    public static int contain;
-    public static int counter;
+    private static int contain;
+    private static int counter;
     static final LinkedHashMap<String, String> THE_MAP = new LinkedHashMap<>();
 
     public Cache(int contain) {
