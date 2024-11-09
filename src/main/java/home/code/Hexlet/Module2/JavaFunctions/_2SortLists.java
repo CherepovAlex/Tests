@@ -24,6 +24,9 @@ class App2 {
     public static List<User> getOldest(List<User> list) {
         ArrayList<User> newList = new ArrayList<>();
         ArrayList<User> newList1 = new ArrayList<>(list);
+        if (list.isEmpty()) {
+            return newList;
+        }
         newList1.sort(Comparator.comparingInt(v -> v.getBirthday().getYear()));
         newList.add(newList1.getFirst());
         return newList;
