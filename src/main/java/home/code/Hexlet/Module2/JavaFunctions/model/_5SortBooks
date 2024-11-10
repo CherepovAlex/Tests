@@ -1,0 +1,20 @@
+В этом упражнении мы лишний раз потренируемся сортировать список объектов. Используйте ссылки на метод
+для записи лямбда-функции, чтобы сделать код более компактным
+
+src/main/java/io/hexlet/App.java
+В классе App реализуйте публичный статический метод sortBooks(), который принимает на вход список книг List<Book>
+ и сортирует его по названию книги в обратном порядке. Метод должен вернуть новый список
+
+var books = new ArrayList<>(
+    List.of(
+        new Book("Dubliners", "James Joyce"),
+        new Book("Moby-Dick", "Herman Melville"),
+        new Book("The Great Gatsby", "F. Scott Fitzgerald")
+    )
+);
+
+var sortedBooks = App.sortBooks(books);
+System.out.println(sortedBooks);
+// => [The Great Gatsby - F. Scott Fitzgerald, Moby-Dick - Herman Melville, Dubliners - James Joyce]
+Подсказки
+Изучите методы класса Comparator. Возможно, какие-то из них вам пригодятся в работе
