@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 class App5 {
     public static ArrayList<Book> sortBooks(List<Book> list) {
-        var newList = new ArrayList<Book>(list);
+        var newList = new ArrayList<>(list);
         newList.sort(Comparator.comparing(Book::getTitle).reversed());
 //        newList.sort((v1, v2) -> v2.getTitle().compareTo(v1.getTitle()));
         return newList;
