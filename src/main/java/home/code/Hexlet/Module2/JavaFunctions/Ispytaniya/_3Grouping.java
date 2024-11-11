@@ -9,7 +9,6 @@ import java.util.function.Function;
 class App3 {
     public static Map<String, List<String>> groupBy(List<String> list, Function<String, String> fn) {
         var newMap = new HashMap<String, List<String>>();
-        var newArrayList = new ArrayList<String>();
         for (String lang: list) {
             String tempString = fn.apply(lang);
             newMap.computeIfAbsent(tempString, temp -> new ArrayList<>())
