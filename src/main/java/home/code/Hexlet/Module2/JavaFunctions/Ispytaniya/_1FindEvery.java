@@ -6,9 +6,9 @@ import java.util.function.Predicate;
 class App1 {
     public static boolean every(List<String> list, Predicate<String> pr) {
         for (String word: list){
-            if (pr.test(word) == false){
+            if (!pr.test(word)){
                 return false;
-            };
+            }
         }
         return true;
     }
