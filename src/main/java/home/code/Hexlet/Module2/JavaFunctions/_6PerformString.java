@@ -14,12 +14,6 @@ class App6 {
     }
 }
 
-//@FunctionalInterface
-//interface Function {
-//    String test(String str);
-//}
-
-
 public class _6PerformString {
     public static void main(String[] args) {
         var words = new ArrayList<String>();

@@ -19,7 +19,7 @@ words.add("PHP");
 
 var result = App.map(words, word -> word.toUpperCase());
 
-// Или используя ссылку на метод
+// или используя ссылку на метод
 // var result = App.map(words, String::toUpperCase());
 
 System.out.println(result); // ["JAVA", "PYTHON", "PHP"]
