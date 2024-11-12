@@ -7,7 +7,9 @@ import java.util.function.UnaryOperator;
 class App2{
     public static List<Integer> duplicate(List<Integer> list) {
         var newList = new ArrayList<>(list);
-        newList.replaceAll(n -> n * 2);
+        UnaryOperator<Integer> method = n -> n * 2;
+        newList.replaceAll(method);
+//        newList.replaceAll(n -> n * 2);
         return newList;
     }
 }
@@ -20,7 +22,7 @@ public class _2UnaryOperator {
 
         System.out.println(result); // => [4, 6, 10]
 
-// Вернулся новый список
+        // Вернулся новый список
         System.out.println(numbers == result); // false
     }
 }
