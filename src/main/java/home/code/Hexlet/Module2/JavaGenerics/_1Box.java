@@ -1,9 +1,9 @@
 package home.code.Hexlet.Module2.JavaGenerics;
 
-public class Box {
+public class _1Box {
     Object value;
 
-    public Box(Object value) {
+    public _1Box(Object value) {
         this.value = value;
     }
 
@@ -12,11 +12,11 @@ public class Box {
     }
 
     public static void main(String[] args) {
-        var box = new Box("word");
+        var box = new _1Box("word");
         var value2 = (String) box.getValue(); // word
 
 
-        var box1 = new Box(10);
+        var box1 = new _1Box(10);
         var value1 = (Integer) box1.getValue(); // 10
     }
 }
