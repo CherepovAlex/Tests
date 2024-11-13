@@ -30,6 +30,7 @@ public class SimpleTriple<L, M, R> implements Triple<L, M, R> {
 
     // BEGIN (write your solution here)
     public SimpleTriple<L, M, R> reverse() {
+        SimpleTriple<R, M, L> st1 = (SimpleTriple<R, M, L>) new SimpleTriple<>(getLeft(), getMiddle(), getRight());
         return (SimpleTriple<L, M, R>) new SimpleTriple<R, M, L>(getRight(), getMiddle(), getLeft());
     }
 
