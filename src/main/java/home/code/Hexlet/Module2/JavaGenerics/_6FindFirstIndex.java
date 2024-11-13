@@ -8,7 +8,7 @@ import java.util.List;
 class ListUtils {
     public static <T> int findFirstIndex(List<? extends Human> human, String prefix) {
         for(var people: human) {
-            if (people.getName().substring(0, prefix.length()).equals(prefix))
+            if (people.getName().startsWith(prefix))
             return human.indexOf(people);
         }
         return -1;
