@@ -18,7 +18,7 @@ public class _2Stack<T> {
             throw new EmptyStackException();
         } else {
             T temp = newArrayList.getLast();
-            newArrayList.remove(newArrayList.size() - 1);
+            newArrayList.removeLast();
             return temp;
         }
     }
