@@ -1,7 +1,6 @@
 package home.code.Hexlet.Module2.JavaGenerics.Ispytaniya;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class _4App {
