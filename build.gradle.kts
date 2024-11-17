@@ -14,6 +14,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("org.apache.commons:commons-lang3:3.17.0")
     implementation("org.apache.commons:commons-collections4:4.5.0-M2")
+    testImplementation("org.assertj:assertj-core:3.22.0")
 }
 
 tasks.test {
