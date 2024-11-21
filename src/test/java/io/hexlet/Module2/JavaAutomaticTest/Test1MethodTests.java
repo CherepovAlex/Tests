@@ -1,6 +1,8 @@
-package home.code.Hexlet.Module2.JavaAutomaticTest;
+package io.hexlet.Module2.JavaAutomaticTest;
 
-import static home.code.Hexlet.Module2.JavaAutomaticTest.Methods.get;
+import org.junit.jupiter.api.Test;
+
+import static io.hexlet.Module2.JavaAutomaticTest.Methods.get;
 
 
 public class Test1MethodTests {
@@ -10,8 +12,7 @@ public class Test1MethodTests {
         get(strings, 5, "value"); // "value"
 
     }
-
-//    @Test
+    @Test
     public void testGet() {
         String[] strings = {"hello", "world"};
         if (!"world".equals(get(strings, 1, "value"))) {

@@ -1,4 +1,4 @@
-package home.code.Hexlet.Module2.JavaAutomaticTest;
+package io.hexlet.Module2.JavaAutomaticTest;
 
 import org.apache.commons.lang3.ArrayUtils;
 

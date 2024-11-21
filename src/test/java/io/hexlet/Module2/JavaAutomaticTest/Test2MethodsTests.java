@@ -1,8 +1,9 @@
-package home.code.Hexlet.Module2.JavaAutomaticTest;
+package io.hexlet.Module2.JavaAutomaticTest;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-
-import static home.code.Hexlet.Module2.JavaAutomaticTest.Methods2.take;
+import static io.hexlet.Module2.JavaAutomaticTest.Methods2.take;
 
 public class Test2MethodsTests {
     public static void main(String[] args) {
@@ -15,8 +16,7 @@ public class Test2MethodsTests {
         take(emptyNumbers, 2); // []
     }
 
-
-    //    @Test
+    @Test
     public void testTake() {
         //BEGIN (write your solution here)
         int[] numbers = {1, 2, 3};

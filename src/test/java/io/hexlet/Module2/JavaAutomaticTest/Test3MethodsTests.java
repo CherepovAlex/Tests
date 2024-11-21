@@ -1,10 +1,7 @@
-package home.code.Hexlet.Module2.JavaAutomaticTest;
+package io.hexlet.Module2.JavaAutomaticTest;
 
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static home.code.Hexlet.Module2.JavaAutomaticTest.Methods3.indexOf;
+import static io.hexlet.Module2.JavaAutomaticTest.Methods3.indexOf;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Test3MethodsTests {
@@ -13,9 +10,7 @@ public class Test3MethodsTests {
         indexOf(numbers, 2, 0); // 1
         indexOf(numbers, 2, 2); // 3
         indexOf(numbers, 8, 0); // -1
-
     }
-
     @Test
     public void testIndexOf() {
         //BEGIN (write your solution here)
