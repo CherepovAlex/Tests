@@ -82,7 +82,7 @@ class Test7MethodsTests {
 
     @Test
     public void testAdd9() {
-        var thrown = catchThrowable(() -> add(coll, 2, 15 / 6));
+        var thrown = catchThrowable(() -> add(coll, 2, 15));
         assertThat(thrown).isInstanceOf(IndexOutOfBoundsException.class);
     }
 

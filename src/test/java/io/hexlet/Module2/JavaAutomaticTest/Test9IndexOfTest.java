@@ -1,4 +1,4 @@
-package io.hexlet.Module2;
+package io.hexlet.Module2.JavaAutomaticTest;
 
 import org.junit.jupiter.api.Test;
 
