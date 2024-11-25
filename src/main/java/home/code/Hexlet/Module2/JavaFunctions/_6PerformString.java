@@ -23,9 +23,6 @@ public class _6PerformString {
 
         var result = App6.map(words, word -> word.toUpperCase());
 
-// Или используя ссылку на метод
-// var result = App.map(words, String::toUpperCase());
-
         System.out.println(result); // ["JAVA", "PYTHON", "PHP"]
     }
 }
