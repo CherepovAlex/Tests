@@ -19,6 +19,9 @@ dependencies {
     implementation("commons-io:commons-io:2.17.0")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.18.1")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.1")
+    implementation("org.netbeans.modules:org-netbeans-modules-web-common:RELEASE180")
+    implementation("org.projectlombok:lombok:1.18.36")
+    implementation("net.datafaker:datafaker:2.4.2")
 }
 
 tasks.test {
